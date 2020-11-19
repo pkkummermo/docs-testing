@@ -5,4 +5,6 @@ sidebar: "docs"
 
 # Lab5e services
 
-To get started select the service you're interested in the left menu.
+## Span
+
+Span is a backend that helps you manage data and devices in a Cellular IoT network. For a quick introduction, follow this link to the [Span introduction](./span/)
