@@ -15,6 +15,17 @@
           <NextPrevLinks />
         </div>
       </div>
+      <div class="order-3 flex w-full md:w-2/3">
+        <a
+          class="inline-flex mt-8 ml-auto text-ui-primary"
+          :href="
+            `https://github.com/lab5e/docs.lab5e.com/edit/master/content/${
+              $page.markdownPage.fileInfo.path
+            }`
+          "
+          >Edit this page</a
+        >
+      </div>
     </div>
   </Layout>
 </template>
@@ -31,6 +42,9 @@ query ($id: ID!) {
     sidebar
     next
     prev
+    fileInfo {
+      path
+    }
     headings {
       depth
       value
