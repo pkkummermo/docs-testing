@@ -1,15 +1,15 @@
-<p align="center">
-    <img src="https://github.com/mrcrmn/docc/raw/master/static/logo.jpg" alt="Docc Logo" width="450">
-</p>
+# Lab5e documentation
 
-A starter documentation theme for [Gridsome](https://gridsome.org/).
+![Lab5e Logo](./static/logo.png)
 
 ## Installation
 
-If you have the Gridsome CLI installed, simply run:
+`npm i`
 
-`gridsome create your-project https://github.com/mrcrmn/docc`
+## Development
 
-## Documentation
+`npm start`
 
-Documentation can be found [here](https://docc-theme.netlify.com/).
+## Docc specific documentation
+
+Docc documentation (the template this theme is based on) can be found [here](https://docc-theme.netlify.com/).
