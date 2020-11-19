@@ -4,6 +4,10 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const tailwind = require("tailwindcss");
+
+const postcssPlugins = [tailwind()];
+
 module.exports = {
   siteName: 'Lab5e doc',
   icon: {
@@ -11,6 +15,13 @@ module.exports = {
     touchicon: './src/assets/favicon.png'
   },
   siteUrl: (process.env.SITE_URL ? process.env.SITE_URL : 'https://docs.lab5e.com'),
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: postcssPlugins,
+      },
+    },
+  },
   settings: {
     web: "https://lab5e.com",
     twitter: process.env.URL_TWITTER || false,
@@ -88,27 +99,6 @@ module.exports = {
         }
       }
     },
-
-    {
-      use: 'gridsome-plugin-tailwindcss',
-      options: {
-        tailwindConfig: './tailwind.config.js',
-        purgeConfig: {
-          // Prevent purging of prism classes.
-          whitelistPatternsChildren: [
-            /token$/
-          ]
-        }
-      }
-    },
-
-    {
-      use: '@gridsome/plugin-google-analytics',
-      options: {
-        id: (process.env.GA_ID ? process.env.GA_ID : 'XX-999999999-9')
-      }
-    },
-
     {
       use: '@gridsome/plugin-sitemap',
       options: {  
