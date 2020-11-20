@@ -28,7 +28,7 @@ module.exports = {
     github: "https://github.com/lab5e/",
     nav: {
       links: [
-        { path: '/docs/', title: 'Home' }
+        { path: '/docs/', title: 'Docs' }
       ]
     },
     sidebar: [
