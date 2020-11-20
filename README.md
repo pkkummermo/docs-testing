@@ -24,12 +24,6 @@ This will start a dev-server on [http://localhost:8080](http://localhost:8080). 
 
 The underlying datastructure for the markdown files are accessible through Explore GraphQL at [http://localhost:8080/\_\_explore](http://localhost:8080/__explore). These are the data documents that are used for generating the built pages, and can be accessed and create more meta for the documentation.
 
-## Building production
-
-`npm run build`
-
-This will generate a `dist`-folder with the fully statically built site. This can be deployed and hosted to whatever CDN of your choosing.
-
 ### Editing and creating new entries
 
 All content is found in the `content`-folder, and its path is created hierarchically according to the folder structure. We're also welcoming to edits, so all markdown pages have an automatic "edit this page" link added to them, which leads directly to github for creating pull requests.
@@ -37,6 +31,12 @@ All content is found in the `content`-folder, and its path is created hierarchic
 ### Creating new menu entries
 
 All menu entries is found in `gridsome.config.js`, and can be customized as you want. For options, check out the [docc documentation](https://docc-theme.netlify.app/docs/sidebar/) for sidebars.
+
+## Building production
+
+`npm run build`
+
+This will generate a `dist`-folder with the fully statically built site. This can be deployed and hosted to whatever CDN of your choosing.
 
 ## Gridsome
 
