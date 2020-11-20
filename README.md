@@ -18,7 +18,7 @@ This will install all dependencies needed to run the project.
 
 `npm start`
 
-This will start a dev-server on [http://localhost:8080](http://localhost:8080)
+This will start a dev-server on [http://localhost:8080](http://localhost:8080). All markdown and HTML changes made will automatically hot reload to the browser, however config changes in the `gridsome.config.js` needs a server restart. Simply stop the server and restart it with `npm start`.
 
 ### GraphQL
 
