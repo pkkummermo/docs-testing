@@ -1,6 +1,6 @@
 ---
 description: ""
-sidebar: "clients"
+sidebar: "docs"
 prev: "/docs/span/clients/curl/"
 next: "/docs/span/user-teams-and-tokens/"
 ---

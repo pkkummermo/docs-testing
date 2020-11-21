@@ -1,6 +1,6 @@
 ---
 description: ""
-sidebar: "clients"
+sidebar: "docs"
 prev: "/docs/span/clients/"
 next: "/docs/span/clients/go/"
 ---
