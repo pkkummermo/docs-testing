@@ -48,6 +48,7 @@
 query {
   metadata {
     siteName
+    siteUrl
   }
 }
 </static-query>
@@ -101,23 +102,23 @@ export default {
       meta: [
         {
           key: "og:type",
-          name: "og:type",
+          property: "og:type",
           content: "website",
         },
         {
           key: "twitter:card",
-          name: "twitter:card",
+          property: "twitter:card",
           content: "summary_large_image",
         },
         {
           key: "og:image",
-          name: "og:image",
-          content: process.env.SITE_URL + "/logo.png",
+          property: "og:image",
+          content: this.$static.metadata.siteUrl + "/logo.png",
         },
         {
           key: "twitter:image",
-          name: "twitter:image",
-          content: process.env.SITE_URL + "/logo.png",
+          property: "twitter:image",
+          content: this.$static.metadata.siteUrl + "/logo.png",
         },
       ],
     };

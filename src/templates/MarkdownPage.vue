@@ -88,22 +88,22 @@ export default {
         },
         {
           key: "og:title",
-          name: "og:title",
+          property: "og:title",
           content: title,
         },
         {
           key: "twitter:title",
-          name: "twitter:title",
+          property: "twitter:title",
           content: title,
         },
         {
           key: "og:description",
-          name: "og:description",
+          property: "og:description",
           content: description,
         },
         {
           key: "twitter:description",
-          name: "twitter:description",
+          property: "twitter:description",
           content: description,
         },
       ],
