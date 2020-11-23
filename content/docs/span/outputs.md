@@ -1,6 +1,6 @@
 ---
 description: ""
-sidebar: "outputs"
+sidebar: "docs"
 prev: "/docs/span/fota/"
 next: "/docs/span/outputs/webhook/"
 ---
