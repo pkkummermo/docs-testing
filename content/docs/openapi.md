@@ -9,12 +9,12 @@ OpenAPI is a spec based description of an API. It can be used to simply browse a
 
 ## Span OpenAPI
 
-You can find the Span OpenAPI Spec at [https://docs.lab5e.com/span/](https://docs.lab5e.com/span/)
+You can find the Span OpenAPI Spec at [Span OpenAPI](/openapi/span/)
 
 ## Places OpenAPI
 
-You can find the Places OpenAPI Spec at [https://docs.lab5e.com/places/](https://docs.lab5e.com/places/)
+You can find the Places OpenAPI Spec at [Places OpenAPI](/openapi/places/)
 
 ## User OpenAPI
 
-You can find the Span OpenAPI Spec at [https://docs.lab5e.com/user/](https://docs.lab5e.com/user/)
+You can find the Span OpenAPI Spec at [User OpenAPI](/openapi/user/)
