@@ -196,6 +196,9 @@ header {
 table {
   @apply text-left;
   @apply mb-6;
+  @apply max-w-full;
+  @apply overflow-x-auto;
+  @apply block;
 
   td,
   th {
