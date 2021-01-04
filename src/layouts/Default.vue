@@ -54,11 +54,13 @@ query {
 </static-query>
 
 <script>
+import Vue from "vue";
+
 import Sidebar from "@/components/Sidebar";
 import LayoutHeader from "@/components/LayoutHeader";
 import { MenuIcon, XIcon } from "vue-feather-icons";
 
-export default {
+export default Vue.extend({
   components: {
     Sidebar,
     LayoutHeader,
@@ -123,7 +125,7 @@ export default {
       ],
     };
   },
-};
+});
 </script>
 
 <style lang="scss"></style>

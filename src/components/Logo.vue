@@ -9,12 +9,14 @@
 </template>
 
 <script>
-export default {
+import Vue from "vue";
+
+export default Vue.extend({
   props: {
     width: {
       type: Number,
-      default: 40
-    }
+      default: 40,
+    },
   },
 
   computed: {
@@ -24,8 +26,7 @@ export default {
 
     getHeight() {
       return Math.ceil((this.getWidth / 48) * 48);
-    }
-  }
-};
+    },
+  },
+});
 </script>
-

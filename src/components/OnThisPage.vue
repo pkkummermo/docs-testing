@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="mt-8 sm:pl-4 md:pl-6 md:pt-12 lg:pl-8 sm:pb-16 sm:border-l border-ui-border md:mt-0"
-  >
+  <div class="mt-8 sm:pl-4 md:pl-6 md:pt-12 lg:pl-8 sm:pb-16 sm:border-l border-ui-border md:mt-0">
     <h3 class="pt-0 mt-0 text-sm tracking-wide uppercase border-none">
       On this page
     </h3>
@@ -11,8 +9,7 @@
           v-for="(heading, index) in headings"
           :key="`${page.path}${heading.anchor}`"
           :class="{
-            'border-t border-dashed border-ui-border pt-2 mt-2':
-              index > 0 && heading.depth === 2,
+            'border-t border-dashed border-ui-border pt-2 mt-2': index > 0 && heading.depth === 2,
             'font-semibold': heading.depth === 2,
             [`depth-${heading.depth}`]: true,
           }"
@@ -43,7 +40,9 @@
 </template>
 
 <script>
-export default {
+import Vue from "vue";
+
+export default Vue.extend({
   data() {
     return {
       activeAnchor: "",
@@ -106,7 +105,7 @@ export default {
       });
 
       const elements = document.querySelectorAll(
-        ".content h2, .content h3, .content h4, .content h5, .content h6"
+        ".content h2, .content h3, .content h4, .content h5, .content h6",
       );
 
       for (let i = 0; i < elements.length; i++) {
@@ -123,5 +122,5 @@ export default {
       this.$nextTick(this.initObserver);
     }
   },
-};
+});
 </script>

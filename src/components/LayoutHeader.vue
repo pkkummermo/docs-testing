@@ -2,20 +2,14 @@
   <div class="py-2 border-t-2 border-ui-primary">
     <div class="container">
       <div class="flex items-center justify-between -mx-2 sm:-mx-4">
-        <div
-          class="flex flex-col items-center px-2 mr-auto sm:px-4 sm:flex-row"
-        >
+        <div class="flex flex-col items-center px-2 mr-auto sm:px-4 sm:flex-row">
           <g-link to="/" class="flex items-center text-ui-primary" title="Home">
             <h2 class="text-2xl mb-0">
-              <span>lab</span><span class="font-bold text-red-600">5</span
-              ><span>e</span>
+              <span>lab</span><span class="font-bold text-red-600">5</span><span>e</span>
             </h2>
           </g-link>
 
-          <div
-            v-if="settings.nav.links.length > 0"
-            class="hidden ml-2 mr-5 sm:block sm:ml-8"
-          >
+          <div v-if="settings.nav.links.length > 0" class="hidden ml-2 mr-5 sm:block sm:ml-8">
             <g-link
               v-for="link in settings.nav.links"
               :key="link.path"
@@ -102,22 +96,18 @@ query {
 </static-query>
 
 <script>
+import Vue from "vue";
+
 import ToggleDarkMode from "@/components/ToggleDarkMode";
 import Logo from "@/components/Logo";
-import {
-  SunIcon,
-  MoonIcon,
-  GlobeIcon,
-  GithubIcon,
-  TwitterIcon,
-} from "vue-feather-icons";
+import { SunIcon, MoonIcon, GlobeIcon, GithubIcon, TwitterIcon } from "vue-feather-icons";
 
 const Search = () =>
-  import(/* webpackChunkName: "search" */ "@/components/Search").catch(
-    (error) => console.warn(error)
+  import(/* webpackChunkName: "search" */ "@/components/Search").catch((error) =>
+    console.warn(error),
   );
 
-export default {
+export default Vue.extend({
   components: {
     Logo,
     Search,
@@ -137,7 +127,7 @@ export default {
       return this.meta.settings;
     },
   },
-};
+});
 </script>
 
 <style lang="scss">
@@ -151,7 +141,9 @@ header {
 
 .nav-link {
   &.active {
-    @apply text-ui-primary font-bold border-ui-primary;
+    @apply text-ui-primary;
+    @apply font-bold;
+    @apply border-ui-primary;
   }
 }
 </style>
