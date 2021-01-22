@@ -10,9 +10,9 @@ next: "/docs/span/outputs/webhook/"
 Span supports the following outputs:
 
 - Websockets - this provides a live stream of data from devices and/or collections directly through the API.
-- Webhooks
-- MQTT
-- IFFT
+- [Webhooks](/docs/span/outputs/webhook/)
+- [MQTT](/docs/span/outputs/mqtt/)
+- [IFFFT](/docs/span/outputs/ifttt/)
 
 ## Word of warning
 
