@@ -44,6 +44,8 @@ While updating the `State` field is observed to monitor the progress.
 
 A complete example in Zephyr using LwM2M is available at [GitHub](https://github.com/ExploratoryEngineering/nrf9160-telenor/tree/master/samples/fota)
 
+![FOTA Explaination](./fota.jpg)
+
 ## Simplified FOTA
 
 The simplified FOTA protocol uses CoAP just like LwM2M but the packet format is
